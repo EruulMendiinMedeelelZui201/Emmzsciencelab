@@ -1,0 +1,256 @@
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Программчлал ашиглан шинжлэх ухааны туршилтуудыг судалж үзэхийг хүсвэл доошоо гүйлгээрэй.">
+    <meta property="og:title" content="mnumsvisuallab.com - Visual Programming for Science Experiments">
+    <meta property="og:description" content="Программчлал ашиглан шинжлэх ухааны туршилтуудыг сурах, үзүүлэх интерактив платформ.">
+    <meta property="og:image" content="URL_to_image_for_og_image">
+    <meta name="robots" content="index, follow">
+    <title>mnumsvisuallab.com - Visual Programming for Science Experiments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            background-image: url('https://assets.onecompiler.app/42ypgxm44/42yuj54c8/virolog-coducting-experiment-course-coronavirus-pandemic-with-micropipette-chemist-modern-laboratory-doing-research-using-dispenser-global-epidemic-with-covid-19_482257-5737.avif');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark overlay to improve text clarity */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+            z-index: -1; /* Ensure the overlay stays behind the text */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for paragraph text */
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+        }
+
+        h2 {
+            color: #ADD8E6;
+            font-size: 1.8rem;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .simulation-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .simulation-links li {
+            background: #f7f7f7;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .simulation-links li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .simulation-links a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #28a745;
+        }
+
+        .simulation-links a:hover {
+            text-decoration: underline;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #FF6347;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e55347;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            color: #ADD8E6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        #contact {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        #contact h2 {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #contact ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                font-size: 1.2em;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+        .sketchfab-embed-wrapper {
+            margin-top: 20px;
+            text-align: center; /* Center the iframe */
+        }
+
+        .sketchfab-embed-wrapper iframe {
+            width: 100%;
+            max-width: 800px; /* Limit max width for responsive design */
+            height: 500px; /* Set a fixed height */
+            border-radius: 10px; /* Optional: rounded corners for the iframe */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Эрүүл мэндийн мэдээлэл зүйн цахим лаборатори-д тавтай морилно уу</h1>
+    <p>Программчлал ашиглан шинжлэх ухааны туршилтуудыг судалж үзэхийг хүсвэл доошоо гүйлгээрэй.</p>
+</header>
+
+<!-- Electronic Devices & Programs Section -->
+<section id="electronics">
+    <h2>Электрон төхөөрөмжүүд ба Программууд</h2>
+    <p>Энд та электроникийн төхөөрөмжүүд болон программуудын симуляцийн линкүүдийг олж болно:</p>
+    <ul class="simulation-links">
+        <li><a href="https://jonathan0423.github.io/digital-oscilloscope/" target="_blank" rel="noopener noreferrer">Дижитал Осциллоскоп</a></li>
+        <li><a href="https://jonathan0423.github.io/sweep-generator/" target="_blank" rel="noopener noreferrer">Симуляци 4: Sweep Generator Model Fg-1883</a></li>
+        <li><a href="https://jonathan0423.github.io/ED-FC-1130B-universal/" target="_blank" rel="noopener noreferrer">Симуляци 5: ED-FC-1130B Universal</a></li>
+        <li><a href="https://jonathan0423.github.io/electronic-circuit-board/" target="_blank" rel="noopener noreferrer">Симуляци 6: Электрон хэлхээ</a></li>
+    </ul>
+</section>
+
+<!-- Physics Simulations Section -->
+<section id="physics">
+    <h2>Физикийн Симуляци ба Туршилтууд</h2>
+    <p>Энэхүү хэсэгт физикийн олон төрлийн симуляци болон туршилтуудыг танилцуулах болно. Эдгээр нь физикийн онол болон туршилтыг интерактив байдлаар судлах боломжийг олгоно.</p>
+    <ul class="simulation-links">
+        <li><a href="https://jonathan0423.github.io/turshilt2-zassan/" target="_blank" rel="noopener noreferrer">Симуляци 2: Туршилт 2 - Зассан</a></li>
+        <li><a href="https://jonathan0423.github.io/pendulumsimulationzassan2/" target="_blank" rel="noopener noreferrer">Симуляци 3: Пендулум Симуляци Зассан 2</a></li>
+    </ul>
+</section>
+
+<!-- Anatomy and Physiology Section -->
+<section id="anatomy-physiology">
+    <h2>Анатоми ба Физиологи</h2>
+    <p>Энэхүү хэсэг нь хүний биологийн бүтэц болон физиологийн үйл ажиллагаа, анагаах ухааны шинжлэх ухаантай холбоотой мэдээллийг оруулна.</p>
+    
+    <!-- Embed Sketchfab Heart Model -->
+    <div class="sketchfab-embed-wrapper">
+        <iframe title="Realistic Human Heart" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed"></iframe>
+        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/realistic-human-heart-3f8072336ce94d18b3d0d055a1ece089?utm_medium=embed&utm_campaign=share-popup&utm_content=3f8072336ce94d18b3d0d055a1ece089" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Realistic Human Heart</a> by 
+            <a href="https://sketchfab.com/neshallads?utm_medium=embed&utm_campaign=share-popup&utm_content=3f8072336ce94d18b3d0d055a1ece089" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">neshallads</a> on 
+            <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=3f8072336ce94d18b3d0d055a1ece089" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+        </p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Холбоо барих</h2>
+    <ul>
+        <li>Email: <a href="mailto:info@mn">tsolmonkhanorgil@gmail.com</a></li>
+        <li>contact: +95011555</li>
+    </ul>
+</section>
+
+<footer>
+    
+  
+</footer>
+</body>
+</html>
